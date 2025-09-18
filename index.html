@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        display: grid;
+        place-content: center;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        min-height: 100vh;
+      }
+      .container {
+        display: grid;
+        background-color: rgb(243, 243, 243);
+        place-content: center;
+        width: 1000px;
+        height: 800px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        gap: 15px;
+        padding: 10px;
+        font-family: "DM Sans";
+      }
+      .box1 {
+        background-color: hsl(31, 66%, 93%);
+        grid-row: 1/6;
+        grid-column: 1/2;
+        border-radius: 10px;
+        overflow: hidden;
+        place-content: center;
+        padding: 20px;
+      }
+      .box1 img {
+        width: 200px;
+        height: 100px;
+      }
+      .box1 h1 {
+        width: 200px;
+      }
+      .box2 {
+        background-color: hsl(256, 67%, 59%);
+        grid-row: 1/5;
+        grid-column: 2/4;
+        border-radius: 10px;
+        overflow: hidden;
+        color: white;
+        font-size: 20px;
+        text-align: center;
+        place-content: center;
+        padding: 20px;
+      }
+      .box2 img {
+        width: 150px;
+      }
+
+      .box3 {
+        background-color: hsl(254, 88%, 90%);
+        grid-row: 1/8;
+        grid-column: 4/5;
+        border-radius: 10px;
+        overflow: hidden;
+        place-content: center;
+        text-align: start;
+        padding: 20px;
+      }
+      .box3 img {
+        width: 270px;
+        height: 270px;
+        margin-left: 50px;
+      }
+      .box4 {
+        background-color: hsl(0, 0%, 100%);
+        grid-row: 5/8;
+        grid-column: 2/3;
+        border-radius: 10px;
+        overflow: hidden;
+        padding: 20px;
+        line-height: 30px;
+        font-size: 15px;
+      }
+      .box4 img {
+        width: 320px;
+        margin-top: 10px;
+      }
+      .box5 {
+        background-color: hsl(39, 100%, 71%);
+        grid-row: 5/8;
+        grid-column: 3/4;
+        border-radius: 10px;
+        overflow: hidden;
+        font-size: 15px;
+        line-height: 30px;
+        padding: 20px;
+      }
+      .box5 img {
+        width: 200px;
+        margin-left: 20px;
+      }
+      .box6 {
+        background-color: hsl(39, 100%, 71%);
+        grid-row: 6/11;
+        grid-column: 1/2;
+        border-radius: 10px;
+        overflow: hidden;
+        font-size: 17px;
+        place-content: center;
+        line-height: 30px;
+        padding: 20px;
+      }
+      .box6 img {
+        width: 200px;
+        margin: 20px;
+      }
+      .box7 {
+        background-color: hsl(0, 0%, 98%);
+        grid-row: 8/11;
+        grid-column: 2/3;
+        border-radius: 10px;
+        overflow: hidden;
+        font-size: 10px;
+        place-content: center;
+        padding: 20px;
+      }
+      .box7 img {
+        width: 200px;
+      }
+      .box8 {
+        background-color: hsl(256, 67%, 59%);
+        grid-row: 8/11;
+        grid-column: 3/5;
+        border-radius: 10px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        color: white;
+        padding: 20px;
+      }
+      .box8 img {
+        width: 230px;
+        height: 200px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box1">
+        <h1>
+          Create and schedule content<span style="color: hsl(256, 67%, 59%)"
+            ><em> quicker.</em></span
+          >
+        </h1>
+        <img src="assets/images/illustration-create-post.webp" />
+      </div>
+      <div class="box2">
+        <h1>
+          Social Media <span style="color: rgb(255, 177, 121)">10x</span>
+          <em>Faster</em> with Al
+        </h1>
+        <img src="assets/images/illustration-five-stars.webp" alt="" />
+        <p>Over 4,000 5-star reviews</p>
+      </div>
+      <div class="box3">
+        <h1>Schedule to social media.</h1>
+        <img src="assets/images/illustration-schedule-posts.webp" alt="" />
+        <p>
+          Optimize post timings to publish content at the perfect time for your
+          audience.
+        </p>
+      </div>
+      <div class="box4">
+        <img src="assets/images/illustration-multiple-platforms.webp" alt="" />
+        <h1 style="margin-top: -20px">
+          Manage multiple accounts and platforms.
+        </h1>
+      </div>
+      <div class="box5">
+        <h1 style="margin-top: -12px">
+          Maintain a consistent posting schedule.
+        </h1>
+        <img
+          style="margin-left: 0px"
+          src="assets/images/illustration-consistent-schedule.webp"
+          alt=""
+        />
+      </div>
+      <div class="box6">
+        <h1>Write your content using Al.</h1>
+        <img src="assets/images/illustration-ai-content.webp" alt="" />
+      </div>
+      <div class="box7">
+        <h1>
+          <span style="font-size: 50px">>56%</span><br />
+          faster audience growth
+        </h1>
+        <img src="assets/images/illustration-audience-growth.webp" alt="" />
+      </div>
+      <div class="box8">
+        <img src="assets/images/illustration-grow-followers.webp" alt="" />
+        <h1>Grow followers with non-stop content.</h1>
+      </div>
+    </div>
+  </body>
+</html>
