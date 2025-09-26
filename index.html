@@ -150,6 +150,51 @@
         height: 200px;
         margin-top: 20px;
       }
+      @media screen and (max-width: 768px) {
+        .container {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+          padding: 10px;
+        }
+
+        .container .box {
+          width: 80%;
+          place-content: center;
+          height: auto;
+          margin-bottom: 15px;
+          padding: 15px;
+          padding: 20px;
+        }
+
+        .box img {
+          width: 100%;
+          height: auto;
+          margin: 0;
+        }
+
+        .box h1 {
+          font-size: 20px;
+        }
+
+        .box2,
+        .box8 {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .box8 {
+          align-items: center;
+        }
+
+        .box8 img {
+          margin-top: 10px;
+          width: 100%;
+          height: auto;
+        }
+      }
+
     </style>
   </head>
   <body>
